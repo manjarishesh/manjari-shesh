@@ -1,0 +1,261 @@
+body {
+    background-color: rgb(225, 240, 253);
+}
+
+body > section:nth-child(2) > div > div > div > div.col-10.col-sm-8.col-lg-6 > img{
+    border-radius: 30px;
+    box-shadow: 10px 10px;
+}
+
+body > section:nth-child(3) > div > div > div > div.col-10.col-sm-8.col-lg-6.mt-2 > img{
+    border-radius: 30px;
+    box-shadow: 10px 10px; 
+}
+ 
+ 
+
+.about {
+    text-align: left;
+    font-weight: bold;
+}
+
+ 
+div > h2 {
+    font-size: large;
+}
+
+.aboutme {
+    text-align: right;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --color-primary: #8ab7e2;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centering the container horizontally */
+    
+  }
+
+  body > section:nth-child(2) > div{
+    width: 100%; /* Adjust as needed */
+    max-width: 3000px;
+     
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+
+  body > div > div > img{
+    margin-top: 70px;
+    height: 500px;
+    width: 700px;
+  }
+  
+
+
+.wrapper {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.wrapper h3 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+ 
+
+
+.skills-wrapper .bar {
+    margin: 20px 0;
+}
+
+.skills-wrapper .bar .info {
+    margin-bottom: 10px;
+}
+
+.skills-wrapper .bar .info span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.skills-wrapper .bar .progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-wrapper .bar .progress-bar span {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    transform: scale(0);
+    background-color: var(--color-primary);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Current Skills */
+.skills-wrapper .bar .progress-bar span.html {
+    width: 80%;
+}
+
+.skills-wrapper .bar .progress-bar span.css {
+    width: 40%;
+}
+
+
+.skills-wrapper .bar .progress-bar span.php {
+    width: 40%;
+}
+
+.skills-wrapper .bar .progress-bar span.codeigniter {
+    width: 55%;
+}
+
+
+/* Ongoing Learning */
+.skills-wrapper .bar .progress-bar span.javascript {
+    width: 10%;
+}
+
+
+.skills-wrapper .bar .progress-bar span.ui-ux {
+    width: 10%;
+}
+
+.skills-wrapper .bar .progress-bar span.figma {
+    width: 10%;
+}
+
+.skills-wrapper .bar .progress-bar span.xd {
+    width: 5%;
+}
+
+ 
+.skills-wrapper .bar .progress-bar {
+    width: 100%;
+    height: 30px; /* Adjust height as needed */
+    background-color: #dddddd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.skills-wrapper .bar .progress-bar span {
+    flex: 1;
+    height: 100%;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* mail me button */
+
+ 
+
+.container .mailbutton .mail-btn {
+    font-weight: bold;
+    background-color: #8ab7e2;
+    border-color: #8ab7e2;
+    color: black;
+    border-radius: 20px;
+    margin-top: 60px;
+    padding: 10px 20px; /* Add padding to make the button more clickable */
+    display: block; /* Make the button a block-level element */
+    margin: 20px auto; /* Center the button horizontally and add 20px margin */
+    text-decoration: none !important; /* Remove underline from the button */
+    width: 200px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    line-height: 25px; /* Set line height to vertically center text */
+}
+
+.container .mailbutton .mail-btn:hover {
+    background-color: #8ab7e2; /* Set the background color to the same color when hovered */  
+    cursor: pointer;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+    .container .mailbutton .mail-btn {
+        margin-left: auto; /* Center the button horizontally */
+        margin-right: auto;
+        display: block; /* Make the button a block-level element */ 
+    }
+}
+
+
+/* projects-grid-homepage */
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:6rem;
+    margin: auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    overflow: hidden; /* Ensure that overflowing content is hidden */
+    
+}
+  
+  .grid-item {
+    flex:1; 
+    max-width: 400px;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    border: 5px solid #8ab7e2;
+    height: auto;
+    background-color: white;
+    margin: 10px;
+  }
+
+
+
+.project-title{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: monospace;
+    margin-bottom: 5px;
+
+}
+
+.project-img{
+    max-width: 100%; /* Set image width to 100% */
+    object-fit: cover; /* Maintain aspect ratio, cover entire container */
+    border-radius: 15px; /* Optionally adjust border radius for the image */
+    height: auto;
+}
+
+ 
+ 
+
+.project{
+    margin-top: 20px;
+}
+
+@media (max-width: 1250px) {
+    .project-container{
+      flex-direction: column;
+      height: auto;
+    }
+  }
+ 
