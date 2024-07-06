@@ -131,20 +131,20 @@ div > h2 {
 
 /* Ongoing Learning */
 .skills-wrapper .bar .progress-bar span.javascript {
-    width: 10%;
+    width: 20%;
 }
 
 
 .skills-wrapper .bar .progress-bar span.ui-ux {
-    width: 10%;
+    width: 50%;
 }
 
 .skills-wrapper .bar .progress-bar span.figma {
-    width: 10%;
+    width: 70%;
 }
 
 .skills-wrapper .bar .progress-bar span.xd {
-    width: 5%;
+    width: 10%;
 }
 
  
